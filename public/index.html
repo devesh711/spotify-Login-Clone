@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.7.1/css/regular.css"
+    />
+    <title>Login-Spotify</title>
+  </head>
+  <body class="">
+    <div
+      class="header border-solid border-b border-gray-300 h-24 flex justify-center"
+    >
+      <div class="">
+        <a href="index.html">
+          <img
+            class="h-20 w-52 mt-2"
+            src="/public/Img/Spotify-Black-Logo.wine.svg"
+            alt="Spotify"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="max-w-md w-full">
+        <div class="">
+          <ul class="contiue-with mt-4">
+            <li class="py-1">
+              <button
+                id="Facebook-login"
+                class="blue btn hover:border-black active:border-8 active:border-black"
+              >
+                <span class="flex flex-row">
+                  <svg
+                    role="img"
+                    height="24"
+                    width="24"
+                    aria-hidden="true"
+                    class="f-icon md:flex hide h-6 w-6 fill-current mr-2"
+                  >
+                    <path
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    ></path>
+                  </svg>
+                  CONTINUE WITH FACEBOOK
+                </span>
+              </button>
+            </li>
+            <li class="py-1">
+              <button id="Apple-login" class="btn apple hover:border-black">
+                <span class="flex flex-row">
+                  <img
+                    height="24"
+                    width="24"
+                    class="mr-2 hide md:flex"
+                    src="/public/Img/Apple_Inc.-White-Logo.wine.svg"
+                    alt=""
+                  />
+                  CONTINUE WITH APPLE
+                </span>
+              </button>
+            </li>
+            <li class="py-1">
+              <button id="Google-login" class="btn gray hover:border-black">
+                <span class="flex flex-row">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 48 48"
+                    class="mr-2 hide md:flex"
+                  >
+                    <path
+                      fill="#FFC107"
+                      d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                    <path
+                      fill="#FF3D00"
+                      d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                    ></path>
+                    <path
+                      fill="#4CAF50"
+                      d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                    ></path>
+                    <path
+                      fill="#1976D2"
+                      d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                    ></path>
+                  </svg>
+                  CONTINUE WITH GOOGLE
+                </span>
+              </button>
+            </li>
+            <li class="py-1">
+              <button id="Number-login" class="btn gray hover:border-black">
+                <span class="flex flex-row"> CONTINUE WITH PHONE NUMBER </span>
+              </button>
+            </li>
+          </ul>
+          <div class="flex flex-row">
+            <hr role="presentation" class="" />
+            <span class="or font-semibold">or</span>
+            <hr role="presentation" class="" />
+          </div>
+        </div>
+        <div class="login-form">
+          <div class="">
+            <span class="font-semibold text sm">Email address or username</span>
+          </div>
+          <div class="py-2">
+            <input
+              type="text"
+              class="inp max-w-md w-full h-12 placeholder-gray-500 hover:border-black"
+              id="Username"
+              placeholder="Email address or username"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+            />
+          </div>
+          <div class="font-semibold text-sm">
+            <span>Password</span>
+          </div>
+          <div class="py-2">
+            <input
+              class="inp max-w-md w-full h-12 placeholder-gray-500 hover:border-black"
+              type="password"
+              id="Password"
+              placeholder="Password"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+            />
+          </div>
+          <div class="py-2">
+            <a
+              href="#"
+              id="password-reset"
+              class="text-black font-semibold underline underline-offset-1"
+              >Forgot your password?</a
+            >
+          </div>
+          <div class="flex flex-row justify-between py-2">
+            <div>
+              <input
+                type="checkbox"
+                id="remeber me"
+                class="check align-middle w-4 h-4 appearance-none rounded ring-1 ring-gray-400 hover:ring-green-400 hover:transition ease-in-out checked:bg-green-500"
+              />
+              <span>Remember me</span>
+            </div>
+            <div>
+              <button
+                id="login"
+                class="login-btn btn hover:scale-105 hover:bg-green-400"
+              >
+                LOG IN
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr role="line" />
+        <div class="py-2">
+          <h2 class="text-center font-semibold text-lg pb-4">
+            Don't have an account?
+          </h2>
+          <a href="#">
+            <button id="Sign-up" class="btn gray hover:border-black">
+              SIGN UP FOR SPOTIFY
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
